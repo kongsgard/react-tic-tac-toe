@@ -36,6 +36,10 @@ ol, ul {
   outline: none;
 }
 
+.highlight {
+  background-color: yellow;
+}
+
 .active {
   font-weight: bolder;
 }
