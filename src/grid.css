@@ -1,0 +1,60 @@
+.game {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 200px;
+  grid-gap: 10px;
+}
+
+.game > .game-board {
+  grid-column: 3 / -3;
+}
+
+.game > .game-info {
+  grid-column: 3 / -3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.game-board > Board > div {
+  display: grid;
+
+  /*
+  height: 60vh;
+  grid-template-columns: repeat(3, 20vmin);
+  */
+}
+
+.board-row {
+  display: grid;
+
+  /*
+  width: 20vh;
+  grid-template-rows: repeat(3, 20vmin);
+  */
+}
+
+.board-row > * {
+  border: 1px solid #999;
+}
+
+/* */
+
+.game-info > div {
+  grid-column: 1 / -1;
+  justify-self: center;
+  font-size: 8vw;
+}
+
+.game-info > button {
+  grid-column: 1 / 2;
+  font-size: 3vw;
+}
+
+.game-info > ol {
+  grid-column: 2 / -1;
+  font-size: 5vw;
+}
+
+.game-info > ol * {
+  font-size: 3vw;
+}

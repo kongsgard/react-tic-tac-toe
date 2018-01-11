@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+//import './index.css';
+import './grid.css';
 
 function Square(props) {
   let highlight = props.highlight === true ? ' highlight' : '';
